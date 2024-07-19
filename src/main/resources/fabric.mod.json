@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "streamstatus",
+  "version": "${version}",
+
+  "name": "Stream Status",
+  "description": "Now everyone will know that you are streaming!'",
+  "authors": [
+    "ForwarD NerN"
+  ],
+  "contact": {
+  },
+
+  "license": "MIT",
+  "icon": "assets/streamstatus/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.nern.streamstatus.StreamStatus"
+    ]
+  },
+  "mixins": [
+    "streamstatus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": ">1.20",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
